@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ex.product.Product" table="Product">
+		<id name="pid" type="int">
+			<column name="id" precision="5" scale="0" />
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="string" column="name"/>
+		<property name="category" type="string" column="cat"/>
+		<property name="price" type="int" column="price"/>
+	</class>
+</hibernate-mapping>
